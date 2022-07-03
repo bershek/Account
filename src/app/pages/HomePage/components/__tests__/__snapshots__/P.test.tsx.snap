@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<P /> should render and match the snapshot 1`] = `
+<p
+  class="P-sc-36evgp-0 gTxAZh"
+/>
+`;

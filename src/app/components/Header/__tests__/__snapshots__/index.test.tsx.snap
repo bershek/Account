@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should match snapshot 1`] = `
+<Header__Wrapper>
+  <PageWrapper>
+    <Title>
+      test title
+    </Title>
+    <Memo
+      label="test label"
+      onClick={[Function]}
+    />
+  </PageWrapper>
+</Header__Wrapper>
+`;

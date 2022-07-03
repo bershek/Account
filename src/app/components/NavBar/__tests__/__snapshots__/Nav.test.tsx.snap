@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Nav /> should match the snapshot 1`] = `
+<nav
+  class="Nav__Wrapper-sc-1doo493-0 bQazae"
+>
+  <a
+    class="Nav__Item-sc-1doo493-1 gNhjHB"
+    href="https://cansahin.gitbook.io/react-boilerplate-cra-template/"
+    rel="noopener noreferrer"
+    target="_blank"
+    title="Documentation Page"
+  >
+    Documentation
+  </a>
+  <a
+    class="Nav__Item-sc-1doo493-1 gNhjHB"
+    href="https://github.com/react-boilerplate/react-boilerplate-cra-template"
+    rel="noopener noreferrer"
+    target="_blank"
+    title="Github Page"
+  >
+    Github
+  </a>
+</nav>
+`;

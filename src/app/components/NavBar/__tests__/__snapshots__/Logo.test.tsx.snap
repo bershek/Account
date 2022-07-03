@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Logo /> should match snapshot 1`] = `
+<div
+  class="Logo__Wrapper-sc-1xqu34i-0 htOFag"
+>
+  <div
+    class="Logo__Title-sc-1xqu34i-1 cybOMi"
+  >
+    React Boilerplate
+  </div>
+  <div
+    class="Logo__Description-sc-1xqu34i-2 fFfMmg"
+  >
+    Create React App Template
+  </div>
+</div>
+`;

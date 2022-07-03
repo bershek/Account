@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Content /> should render and match the snapshot 1`] = `
+<Content__Wrapper>
+  <section
+    className="udlite-container"
+  >
+    <h2
+      className="udlite-heading-xl top-categories--title--261i0"
+    >
+      Courses
+    </h2>
+    <ul>
+      <li>
+        <a
+          href="/courses/design/"
+        >
+          <span>
+            Design
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/courses/development/"
+        >
+          <span>
+            Development
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/courses/marketing/"
+        >
+          <span>
+            Marketing
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/courses/it-and-software/"
+        >
+          <span>
+            IT and Software
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/courses/personal-development/"
+        >
+          <span>
+            Personal Development
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/courses/business/"
+        >
+          <span>
+            Business
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/courses/photography/"
+        >
+          <span>
+            Photography
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/courses/music/"
+        >
+          <span>
+            Music
+          </span>
+        </a>
+      </li>
+    </ul>
+  </section>
+</Content__Wrapper>
+`;
