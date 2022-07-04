@@ -3,9 +3,9 @@
 exports[`<Header /> should match snapshot 1`] = `
 <Header__Wrapper>
   <PageWrapper>
-    <Title>
+    <Header__Title>
       test title
-    </Title>
+    </Header__Title>
     <Memo
       label="test label"
       onClick={[Function]}

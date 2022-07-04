@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
-import Content from './Content';
+import Content from './components/Content';
 import { PageWrapper } from 'app/components/PageWrapper';
-import {Header} from "../../components/Header";
-import {useAuthSlice} from "../LoginPage/slice";
+import {Header} from "app/components/Header";
+import {useAuthSlice} from 'app/pages/LoginPage/slice';
 import {useDispatch} from "react-redux";
 import {useCallback} from "react";
 
@@ -12,7 +12,7 @@ export function HomePage() {
   const dispatch = useDispatch();
 
   const handleLogout = useCallback(() => {
-    localStorage.removeItem('user');
+    localStorage.clear();
     dispatch(actions.changeAuth(false));
   },[]);
 

@@ -1,23 +1,25 @@
 import React, {useCallback, useState} from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageWrapper } from 'app/components/PageWrapper';
-import {Header} from '../../components/Header';
-import Login from "./Login";
+import {Header} from 'app/components/Header';
+import Login from './components/Login';
+
+type CallbackType = (...args: boolean[]) => void;
 
 const LoginPage = ():JSX.Element => {
   const [showLogin, setShowLogin] = useState<boolean>(false);
 
-  const handleShowLogin = useCallback((state: boolean): void => {
+  const handleShowLogin = useCallback<CallbackType>((state: boolean): void => {
     setShowLogin(state);
   }, []);
 
   return (
     <>
       <Helmet>
-        <title>Login Page</title>
+        <title>Index Page</title>
         <meta
           name="description"
-          content="Student Login Page"
+          content="Student Index Page"
         />
       </Helmet>
       <Header title="Login Page" label="Login" onClick={handleShowLogin} />

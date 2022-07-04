@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<Lead /> should render and match the snapshot 1`] = `
-<p
-  class="Lead-sc-x6jkjd-0 fPlqCx"
-/>
-`;

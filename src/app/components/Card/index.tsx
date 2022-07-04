@@ -1,20 +1,21 @@
 import * as React from 'react';
 import styled from 'styled-components/macro';
 import { Link } from '../Link';
+import { sizes } from 'styles/media';
 
-interface Props {
+interface CardProps {
   label: string,
   image: string,
   href: string
 }
 
-export function Card({label, image, href}: Props) {
+const Card = ({label, image, href}: CardProps): JSX.Element => {
   return (
     <Wrapper>
-      <Link to={href}>
+      <Link to={process.env.PUBLIC_URL + href}>
         <Item>
-          <Img src={image} alt="icon" />
           <Title>{label}</Title>
+          <Img src={image} alt="icon" />
         </Item>
       </Link>
     </Wrapper>
@@ -25,6 +26,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  margin-bottom: 1.25rem;
 `;
 const Img = styled.img`
   display: block;
@@ -35,13 +37,15 @@ const Img = styled.img`
 `;
 
 const Title = styled.h4`
-  font-size: 2rem;
+  font-size: 1rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: left;
   color: ${p => p.theme.text};
-  @media (max-width: 600px) {
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  @media (max-width: ${sizes.small}px) {
     font-size: 0.75rem;
   }
 `;
@@ -53,3 +57,5 @@ const Item = styled.div`
   flex-direction: column;
   font-size: 1.5rem;
 `;
+
+export default Card;
